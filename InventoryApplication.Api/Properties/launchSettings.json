@@ -1,0 +1,56 @@
+{
+  "profiles": {
+    "http": {
+      "applicationUrl": "http://localhost:5089",
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "true",
+        "INVENTORY_CONNECTION_STRING": "Server=localhost;Database=InventoryDb;TrustServerCertificate=True;User Id=sa;Password=P@ssword@veryStrong"
+      },
+      "launchBrowser": true,
+      "launchUrl": "swagger"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7046;http://localhost:5089"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "8081",
+        "ASPNETCORE_HTTP_PORTS": "8080",
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "true",
+        "INVENTORY_CONNECTION_STRING": "Server=inventorydb;Database=InventoryDb;Trusted_Connection=True;User Id=sa;Password=P@ssword@veryStrong"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:9763",
+      "sslPort": 44385
+    }
+  }
+}
